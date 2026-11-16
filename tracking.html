@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cargo Tracking &amp; Shipment Visibility — Panworld Nigeria</title>
+    <meta
+      name="description"
+      content="Check Bill of Lading, Air Waybill, and customs clearance milestones or submit a tracking escalation directly to Panworld Nigeria."
+    />
+    <meta property="og:title" content="Cargo Tracking &amp; Shipment Visibility — Panworld Nigeria" />
+    <meta property="og:description" content="Real-time shipment milestone lookup and exception resolution desk." />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand-link" aria-label="Panworld Nigeria Limited Home">
+          <img
+            src="https://panworldnigeria.com/wp-content/uploads/elementor/thumbs/panworldngr-logo-q0qnswgfwsooqgn6zd3ggf50gly44lczrlu0pk92pg.png"
+            alt="Panworld Nigeria Limited"
+            class="brand-logo"
+            referrerpolicy="no-referrer"
+          />
+        </a>
+
+        <nav class="desktop-nav" aria-label="Primary Navigation">
+          <div class="nav-item">
+            <a href="index.html" class="nav-link" data-nav-file="index.html">Home</a>
+          </div>
+          <div class="nav-item">
+            <button
+              type="button"
+              class="nav-dropdown-trigger"
+              data-services-trigger
+              aria-expanded="false"
+              aria-controls="desktop-services-menu"
+            >
+              <span>Services</span>
+              <svg class="chevron-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div id="desktop-services-menu" class="nav-dropdown-menu" data-services-menu role="menu">
+              <a href="sea-freight.html" class="dropdown-link" data-nav-file="sea-freight.html" role="menuitem">
+                <span class="dropdown-link-title">Sea Freight</span>
+                <span class="dropdown-link-desc">FCL, LCL &amp; breakbulk ocean forwarding</span>
+              </a>
+              <a href="air-freight.html" class="dropdown-link" data-nav-file="air-freight.html" role="menuitem">
+                <span class="dropdown-link-title">Air Freight</span>
+                <span class="dropdown-link-desc">Express &amp; consolidated air uplift</span>
+              </a>
+              <a href="customs-clearance.html" class="dropdown-link" data-nav-file="customs-clearance.html" role="menuitem">
+                <span class="dropdown-link-title">Customs Clearance</span>
+                <span class="dropdown-link-desc">NCS brokerage, PAAR &amp; regulatory compliance</span>
+              </a>
+              <a href="road-transport.html" class="dropdown-link" data-nav-file="road-transport.html" role="menuitem">
+                <span class="dropdown-link-title">Road Transport</span>
+                <span class="dropdown-link-desc">Containerized &amp; heavy interstate haulage</span>
+              </a>
+              <a href="warehousing.html" class="dropdown-link" data-nav-file="warehousing.html" role="menuitem">
+                <span class="dropdown-link-title">Warehousing &amp; Distribution</span>
+                <span class="dropdown-link-desc">Bonded &amp; ambient cargo fulfillment hubs</span>
+              </a>
+              <a href="import-finance.html" class="dropdown-link" data-nav-file="import-finance.html" role="menuitem">
+                <span class="dropdown-link-title">Import Finance Advisory</span>
+                <span class="dropdown-link-desc">Form M, LC documentation &amp; duty planning</span>
+              </a>
+              <a href="tracking.html" class="dropdown-link" data-nav-file="tracking.html" role="menuitem">
+                <span class="dropdown-link-title">Tracking</span>
+                <span class="dropdown-link-desc">Milestone visibility &amp; status updates</span>
+              </a>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="about.html" class="nav-link" data-nav-file="about.html">About</a>
+          </div>
+        </nav>
+
+        <div class="header-actions">
+          <a href="#inquiry-form" class="btn btn-primary header-cta">Email Us</a>
+          <button
+            type="button"
+            class="mobile-menu-btn"
+            data-drawer-open
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="mobile-drawer"
+          >
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 7H20M4 12H20M4 17H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div id="mobile-drawer-backdrop" class="mobile-drawer-backdrop"></div>
+    <aside id="mobile-drawer" class="mobile-drawer" aria-hidden="true" aria-label="Mobile Navigation">
+      <div class="mobile-drawer-header">
+        <a href="index.html" class="brand-link" aria-label="Panworld Nigeria Limited Home">
+          <img
+            src="https://panworldnigeria.com/wp-content/uploads/elementor/thumbs/panworldngr-logo-q0qnswgfwsooqgn6zd3ggf50gly44lczrlu0pk92pg.png"
+            alt="Panworld Nigeria Limited"
+            class="brand-logo"
+            referrerpolicy="no-referrer"
+          />
+        </a>
+        <button type="button" class="mobile-drawer-close" data-drawer-close aria-label="Close navigation menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 6L18 18M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-drawer-body">
+        <ul class="drawer-nav-list">
+          <li><a href="index.html" class="drawer-nav-link" data-nav-file="index.html">Home</a></li>
+          <li>
+            <details class="drawer-services-details" open>
+              <summary class="drawer-nav-link drawer-services-summary">
+                <span>Services</span>
+                <svg class="chevron-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </summary>
+              <ul class="drawer-sublist">
+                <li><a href="sea-freight.html" class="drawer-nav-link" data-nav-file="sea-freight.html">Sea Freight</a></li>
+                <li><a href="air-freight.html" class="drawer-nav-link" data-nav-file="air-freight.html">Air Freight</a></li>
+                <li><a href="customs-clearance.html" class="drawer-nav-link" data-nav-file="customs-clearance.html">Customs Clearance</a></li>
+                <li><a href="road-transport.html" class="drawer-nav-link" data-nav-file="road-transport.html">Road Transport</a></li>
+                <li><a href="warehousing.html" class="drawer-nav-link" data-nav-file="warehousing.html">Warehousing &amp; Distribution</a></li>
+                <li><a href="import-finance.html" class="drawer-nav-link" data-nav-file="import-finance.html">Import Finance Advisory</a></li>
+                <li><a href="tracking.html" class="drawer-nav-link" data-nav-file="tracking.html">Tracking</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="about.html" class="drawer-nav-link" data-nav-file="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="mobile-drawer-footer">
+        <a href="#inquiry-form" class="btn btn-primary" style="width:100%;">Email Us</a>
+      </div>
+    </aside>
+
+    <div class="breadcrumb-bar">
+      <div class="container breadcrumb-inner">
+        <ol class="breadcrumb-list" aria-label="Breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li class="breadcrumb-sep" aria-hidden="true">/</li>
+          <li><a href="index.html#services">Services</a></li>
+          <li class="breadcrumb-sep" aria-hidden="true">/</li>
+          <li><span class="breadcrumb-current">Cargo Tracking</span></li>
+        </ol>
+        <div class="breadcrumb-desk">Nigeria Freight &amp; Customs Desk</div>
+      </div>
+    </div>
+
+    <main>
+      <section class="hero">
+        <div class="hero-media">
+          <img
+            src="src/assets/images/hero_unbranded_terminal_1794839481580.jpg"
+            alt="Unbranded deep-water container port and freight terminal with gantry cranes in daylight"
+            class="hero-bg-img"
+            referrerpolicy="no-referrer"
+          />
+        </div>
+        <div class="hero-scrim" aria-hidden="true"></div>
+        <div class="container hero-content-wrap">
+          <div class="hero-copy">
+            <p class="hero-kicker">
+              <span>Shipment Visibility</span>
+              <span aria-hidden="true">&middot;</span>
+              <span>B/L, MAWB &amp; Customs Milestones</span>
+            </p>
+            <h1 class="hero-title">Cargo Tracking &amp; Milestone Resolution</h1>
+            <p class="hero-subtitle">
+              Request live milestone updates across ocean sailing, air cargo arrival, PAAR clearance, and final inland
+              delivery directly from Panworld's operations desk.
+            </p>
+            <div class="hero-actions">
+              <a href="#inquiry-form" class="btn btn-primary">Request Status Update</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container service-layout">
+        <div class="service-main">
+          <section class="content-block">
+            <h2 class="content-h2">Milestone Events Tracked Across Every File</h2>
+            <div class="capability-grid">
+              <div class="capability-card">
+                <h3 class="capability-title">Origin Uplift &amp; Vessel Departure</h3>
+                <p class="capability-text">
+                  Confirmed Master Bill of Lading (MBL) or Master Air Waybill (MAWB) departure timestamps and ETA alerts.
+                </p>
+              </div>
+              <div class="capability-card">
+                <h3 class="capability-title">PAAR &amp; Customs Assessment</h3>
+                <p class="capability-text">
+                  Real-time tracking of Form M validation, PAAR issuance, SGD lodgment, and NCS duty assessment notices.
+                </p>
+              </div>
+              <div class="capability-card">
+                <h3 class="capability-title">Examination &amp; Terminal Release</h3>
+                <p class="capability-text">
+                  Joint physical examination scheduling, SON/NAFDAC sign-off, and Terminal Delivery Order (TDO) issuance.
+                </p>
+              </div>
+              <div class="capability-card">
+                <h3 class="capability-title">Gate-Out &amp; Proof of Delivery</h3>
+                <p class="capability-text">
+                  Truck plate dispatch details, highway corridor checkpoints, consignee receipt, and empty return EIR.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="content-block">
+            <h2 class="content-h2">Related Trade Desks</h2>
+            <div class="related-grid">
+              <a href="sea-freight.html" class="related-link">
+                <span class="related-link-title">Sea Freight</span>
+                <span class="related-link-sub">Ocean bookings &amp; B/L desk</span>
+              </a>
+              <a href="air-freight.html" class="related-link">
+                <span class="related-link-title">Air Freight</span>
+                <span class="related-link-sub">Express MAWB uplift desk</span>
+              </a>
+              <a href="customs-clearance.html" class="related-link">
+                <span class="related-link-title">Customs Clearance</span>
+                <span class="related-link-sub">PAAR &amp; examination status</span>
+              </a>
+            </div>
+          </section>
+        </div>
+
+        <aside id="inquiry-form" class="sidebar-sticky" aria-label="Tracking Escalation Inquiry Form">
+          <div class="inquiry-card">
+            <div class="inquiry-card-header">
+              <p class="inquiry-kicker">Visibility &amp; Exception Desk</p>
+              <h2 class="inquiry-title">Request Tracking Status Update</h2>
+              <p class="inquiry-sub">
+                Submit your shipment reference below for a milestone update from our tracking desk.
+              </p>
+            </div>
+            <div class="inquiry-card-body">
+              <form class="form-grid" data-formsubmit data-service-code="TRK" novalidate>
+                <input type="hidden" name="_subject" value="New Cargo Tracking Inquiry — Panworld Nigeria" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="service" value="Cargo Tracking &amp; Milestone Resolution" />
+                <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+
+                <div class="form-field">
+                  <label for="trk-ref" class="form-label">Waybill / B/L / Container No. <span class="form-required">*</span></label>
+                  <input
+                    id="trk-ref"
+                    name="tracking_number"
+                    data-label="Reference Number"
+                    type="text"
+                    class="form-control mono"
+                    placeholder="Enter B/L, MAWB, or Container Number"
+                    required
+                  />
+                </div>
+
+                <div class="form-row-2">
+                  <div class="form-field">
+                    <label for="trk-mode" class="form-label">Shipment Mode <span class="form-required">*</span></label>
+                    <select id="trk-mode" name="shipment_mode" data-label="Shipment Mode" class="form-control" required>
+                      <option value="Sea Freight">Sea Freight</option>
+                      <option value="Air Freight">Air Freight</option>
+                      <option value="Road Haulage">Road Haulage</option>
+                      <option value="Customs Clearance Only">Customs Clearance Only</option>
+                    </select>
+                  </div>
+                  <div class="form-field">
+                    <label for="trk-type" class="form-label">Request Type <span class="form-required">*</span></label>
+                    <select id="trk-type" name="request_type" data-label="Request Type" class="form-control" required>
+                      <option value="Live Milestone Update">Live Milestone Update</option>
+                      <option value="Customs / PAAR Release Check">Customs / PAAR Release Check</option>
+                      <option value="Exception Investigation">Exception Investigation</option>
+                      <option value="Signed POD Copy">Signed POD Copy</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-row-2">
+                  <div class="form-field">
+                    <label for="trk-name" class="form-label">Full Name <span class="form-required">*</span></label>
+                    <input id="trk-name" name="full_name" data-label="Full Name" type="text" class="form-control" required />
+                  </div>
+                  <div class="form-field">
+                    <label for="trk-company" class="form-label">Company Name <span class="form-required">*</span></label>
+                    <input id="trk-company" name="company_name" data-label="Company" type="text" class="form-control" required />
+                  </div>
+                </div>
+
+                <div class="form-row-2">
+                  <div class="form-field">
+                    <label for="trk-phone" class="form-label">Contact Number <span class="form-required">*</span></label>
+                    <input
+                      id="trk-phone"
+                      name="contact_number"
+                      data-label="Contact Number"
+                      type="tel"
+                      class="form-control"
+                      placeholder="+234 800 000 0000"
+                      required
+                    />
+                  </div>
+                  <div class="form-field">
+                    <label for="trk-email" class="form-label">Email Address <span class="form-required">*</span></label>
+                    <input
+                      id="trk-email"
+                      name="email"
+                      data-label="Email Address"
+                      type="email"
+                      class="form-control"
+                      placeholder="name@company.com"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-error-msg" data-form-error role="alert"></div>
+
+                <button type="submit" class="btn btn-primary form-submit-btn">Send Tracking Request</button>
+                <p class="form-footnote">
+                  Status updates and confirmation dockets are dispatched directly to your email address.
+                </p>
+              </form>
+
+              <div class="docket-panel" data-docket-panel aria-live="polite">
+                <div class="docket-status" data-docket-status>
+                  <p class="docket-status-title" data-docket-status-title></p>
+                  <p class="docket-status-desc" data-docket-status-desc></p>
+                </div>
+                <div class="docket-meta">
+                  <span>Docket: <strong class="docket-ref" data-docket-ref></strong></span>
+                  <span data-docket-time></span>
+                </div>
+                <div class="docket-list" data-docket-list></div>
+                <div class="docket-actions">
+                  <button type="button" class="btn btn-navy" data-reset-inquiry>Submit another inquiry</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-logo-badge">
+              <img
+                src="https://panworldnigeria.com/wp-content/uploads/elementor/thumbs/panworldngr-logo-q0qnswgfwsooqgn6zd3ggf50gly44lczrlu0pk92pg.png"
+                alt="Panworld Nigeria Limited"
+                class="brand-logo"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+            <p class="footer-text">
+              Integrated freight forwarding, licensed customs brokerage, warehousing, and trade logistics across Nigeria's
+              sea, air, and inland corridors.
+            </p>
+            <a href="mailto:panworld99@yahoo.co.uk" class="footer-email">panworld99@yahoo.co.uk</a>
+          </div>
+          <div>
+            <h3 class="footer-heading">Freight &amp; Logistics</h3>
+            <ul class="footer-links">
+              <li><a href="sea-freight.html">Sea Freight</a></li>
+              <li><a href="air-freight.html">Air Freight</a></li>
+              <li><a href="road-transport.html">Road Transport</a></li>
+              <li><a href="warehousing.html">Warehousing &amp; Distribution</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer-heading">Services</h3>
+            <ul class="footer-links">
+              <li><a href="customs-clearance.html">Customs Clearance</a></li>
+              <li><a href="import-finance.html">Import Finance Advisory</a></li>
+              <li><a href="tracking.html">Tracking</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer-heading">Corporate</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="mailto:panworld99@yahoo.co.uk">Email Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2026 Panworld Nigeria. All rights reserved.</span>
+          <span>Official Correspondence: <a href="mailto:panworld99@yahoo.co.uk" style="color:inherit;text-decoration:underline;">panworld99@yahoo.co.uk</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

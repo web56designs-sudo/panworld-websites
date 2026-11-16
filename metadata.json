@@ -1,0 +1,6 @@
+{
+  "name": "Panworld Nigeria — Global Freight, Customs & Trade Logistics",
+  "description": "Production-ready static corporate website for Panworld Nigeria covering sea freight, air freight, road haulage, warehousing, customs clearance, import finance, and cargo tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

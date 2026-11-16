@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warehousing &amp; Distribution — Panworld Nigeria</title>
+    <meta
+      name="description"
+      content="Customs-bonded holding facilities, ambient high-bay pallet racking, container deconsolidation, cross-docking, and inventory management in Nigeria."
+    />
+    <meta property="og:title" content="Warehousing &amp; Distribution — Panworld Nigeria" />
+    <meta property="og:description" content="Bonded and ambient warehousing hubs across Lagos, Port Harcourt, and Abuja." />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand-link" aria-label="Panworld Nigeria Limited Home">
+          <img
+            src="https://panworldnigeria.com/wp-content/uploads/elementor/thumbs/panworldngr-logo-q0qnswgfwsooqgn6zd3ggf50gly44lczrlu0pk92pg.png"
+            alt="Panworld Nigeria Limited"
+            class="brand-logo"
+            referrerpolicy="no-referrer"
+          />
+        </a>
+
+        <nav class="desktop-nav" aria-label="Primary Navigation">
+          <div class="nav-item">
+            <a href="index.html" class="nav-link" data-nav-file="index.html">Home</a>
+          </div>
+          <div class="nav-item">
+            <button
+              type="button"
+              class="nav-dropdown-trigger"
+              data-services-trigger
+              aria-expanded="false"
+              aria-controls="desktop-services-menu"
+            >
+              <span>Services</span>
+              <svg class="chevron-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div id="desktop-services-menu" class="nav-dropdown-menu" data-services-menu role="menu">
+              <a href="sea-freight.html" class="dropdown-link" data-nav-file="sea-freight.html" role="menuitem">
+                <span class="dropdown-link-title">Sea Freight</span>
+                <span class="dropdown-link-desc">FCL, LCL &amp; breakbulk ocean forwarding</span>
+              </a>
+              <a href="air-freight.html" class="dropdown-link" data-nav-file="air-freight.html" role="menuitem">
+                <span class="dropdown-link-title">Air Freight</span>
+                <span class="dropdown-link-desc">Express &amp; consolidated air uplift</span>
+              </a>
+              <a href="customs-clearance.html" class="dropdown-link" data-nav-file="customs-clearance.html" role="menuitem">
+                <span class="dropdown-link-title">Customs Clearance</span>
+                <span class="dropdown-link-desc">NCS brokerage, PAAR &amp; regulatory compliance</span>
+              </a>
+              <a href="road-transport.html" class="dropdown-link" data-nav-file="road-transport.html" role="menuitem">
+                <span class="dropdown-link-title">Road Transport</span>
+                <span class="dropdown-link-desc">Containerized &amp; heavy interstate haulage</span>
+              </a>
+              <a href="warehousing.html" class="dropdown-link" data-nav-file="warehousing.html" role="menuitem">
+                <span class="dropdown-link-title">Warehousing &amp; Distribution</span>
+                <span class="dropdown-link-desc">Bonded &amp; ambient cargo fulfillment hubs</span>
+              </a>
+              <a href="import-finance.html" class="dropdown-link" data-nav-file="import-finance.html" role="menuitem">
+                <span class="dropdown-link-title">Import Finance Advisory</span>
+                <span class="dropdown-link-desc">Form M, LC documentation &amp; duty planning</span>
+              </a>
+              <a href="tracking.html" class="dropdown-link" data-nav-file="tracking.html" role="menuitem">
+                <span class="dropdown-link-title">Tracking</span>
+                <span class="dropdown-link-desc">Milestone visibility &amp; status updates</span>
+              </a>
+            </div>
+          </div>
+          <div class="nav-item">
+            <a href="about.html" class="nav-link" data-nav-file="about.html">About</a>
+          </div>
+        </nav>
+
+        <div class="header-actions">
+          <a href="#inquiry-form" class="btn btn-primary header-cta">Email Us</a>
+          <button
+            type="button"
+            class="mobile-menu-btn"
+            data-drawer-open
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="mobile-drawer"
+          >
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 7H20M4 12H20M4 17H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div id="mobile-drawer-backdrop" class="mobile-drawer-backdrop"></div>
+    <aside id="mobile-drawer" class="mobile-drawer" aria-hidden="true" aria-label="Mobile Navigation">
+      <div class="mobile-drawer-header">
+        <a href="index.html" class="brand-link" aria-label="Panworld Nigeria Limited Home">
+          <img
+            src="https://panworldnigeria.com/wp-content/uploads/elementor/thumbs/panworldngr-logo-q0qnswgfwsooqgn6zd3ggf50gly44lczrlu0pk92pg.png"
+            alt="Panworld Nigeria Limited"
+            class="brand-logo"
+            referrerpolicy="no-referrer"
+          />
+        </a>
+        <button type="button" class="mobile-drawer-close" data-drawer-close aria-label="Close navigation menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 6L18 18M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-drawer-body">
+        <ul class="drawer-nav-list">
+          <li><a href="index.html" class="drawer-nav-link" data-nav-file="index.html">Home</a></li>
+          <li>
+            <details class="drawer-services-details">
+              <summary class="drawer-nav-link drawer-services-summary">
+                <span>Services</span>
+                <svg class="chevron-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </summary>
+              <ul class="drawer-sublist">
+                <li><a href="sea-freight.html" class="drawer-nav-link" data-nav-file="sea-freight.html">Sea Freight</a></li>
+                <li><a href="air-freight.html" class="drawer-nav-link" data-nav-file="air-freight.html">Air Freight</a></li>
+                <li><a href="customs-clearance.html" class="drawer-nav-link" data-nav-file="customs-clearance.html">Customs Clearance</a></li>
+                <li><a href="road-transport.html" class="drawer-nav-link" data-nav-file="road-transport.html">Road Transport</a></li>
+                <li><a href="warehousing.html" class="drawer-nav-link" data-nav-file="warehousing.html">Warehousing &amp; Distribution</a></li>
+                <li><a href="import-finance.html" class="drawer-nav-link" data-nav-file="import-finance.html">Import Finance Advisory</a></li>
+                <li><a href="tracking.html" class="drawer-nav-link" data-nav-file="tracking.html">Tracking</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a href="about.html" class="drawer-nav-link" data-nav-file="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="mobile-drawer-footer">
+        <a href="#inquiry-form" class="btn btn-primary" style="width:100%;">Email Us</a>
+      </div>
+    </aside>
+
+    <div class="breadcrumb-bar">
+      <div class="container breadcrumb-inner">
+        <ol class="breadcrumb-list" aria-label="Breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li class="breadcrumb-sep" aria-hidden="true">/</li>
+          <li><a href="index.html#services">Services</a></li>
+          <li class="breadcrumb-sep" aria-hidden="true">/</li>
+          <li><span class="breadcrumb-current">Warehousing &amp; Distribution</span></li>
+        </ol>
+        <div class="breadcrumb-desk">Nigeria Freight &amp; Customs Desk</div>
+      </div>
+    </div>
+
+    <main>
+      <section class="hero">
+        <div class="hero-media">
+          <img
+            src="src/assets/images/hero_warehouse_hub_1794835923015.jpg"
+            alt="Bright modern warehouse interior with high-bay pallet racking and electric reach truck"
+            class="hero-bg-img"
+            referrerpolicy="no-referrer"
+          />
+        </div>
+        <div class="hero-scrim" aria-hidden="true"></div>
+        <div class="container hero-content-wrap">
+          <div class="hero-copy">
+            <p class="hero-kicker">
+              <span>Storage &amp; Fulfillment</span>
+              <span aria-hidden="true">&middot;</span>
+              <span>Bonded &amp; Ambient Hubs</span>
+            </p>
+            <h1 class="hero-title">Bonded Warehousing, Cross-Docking &amp; Inventory Control</h1>
+            <p class="hero-subtitle">
+              Secure, high-bay pallet racking and port-adjacent holding yards designed to cut port storage costs,
+              streamline deconsolidation, and support regional distribution.
+            </p>
+            <div class="hero-actions">
+              <a href="#inquiry-form" class="btn btn-primary">Reserve Storage Space</a>
+              <a href="road-transport.html" class="btn btn-secondary">Distribution Haulage</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container service-layout">
+        <div class="service-main">
+          <section class="content-block">
+            <h2 class="content-h2">Flexible Storage Near Port &amp; Industrial Corridors</h2>
+            <p class="content-p">
+              Whether holding duty-unpaid inventory in customs-bonded zones or staging cleared raw materials for weekly
+              factory call-offs, Panworld provides audited warehousing with strict FIFO/FEFO batch discipline.
+            </p>
+            <div class="capability-grid">
+              <div class="capability-card">
+                <h3 class="capability-title">Customs-Bonded Storage</h3>
+                <p class="capability-text">
+                  Stage uncleared cargo out of congested port terminals while finalizing phased duty settlements.
+                </p>
+              </div>
+              <div class="capability-card">
+                <h3 class="capability-title">Container Destuffing &amp; Cross-Dock</h3>
+                <p class="capability-text">
+                  Rapid devanning of 20ft and 40ft containers onto sorted regional delivery trucks within 24 hours.
+                </p>
+              </div>
+              <div class="capability-card">
+                <h3 class="capability-title">Pallet Racking &amp; Pick-Pack</h3>
+                <p class="capability-text">
+                  Barcode-labeled selective racking, shrink-wrapping, re-palletizing, and batch-level stock reporting.
+                </p>
+              </div>
+              <div class="capability-card">
+                <h3 class="capability-title">Open Yard for Project Equipment</h3>
+                <p class="capability-text">
+                  Reinforced hardstand yards for pipes, steel coils, generators, and oversized industrial machinery.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="content-block">
+            <h2 class="content-h2">Warehouse Operating Standards</h2>
+            <ol class="process-list">
+              <li class="process-item">
+                <span class="process-num">01.</span>
+                <div>
+                  <h3 class="process-title">Inbound Gate-In &amp; Tally Verification</h3>
+                  <p class="process-desc">
+                    Every pallet and carton is counted against the packing list with discrepancy photos issued on arrival.
+                  </p>
+                </div>
+              </li>
+              <li class="process-item">
+                <span class="process-num">02.</span>
+                <div>
+                  <h3 class="process-title">Zone Put-Away &amp; Bin Assignment</h3>
+                  <p class="process-desc">
+                    SKU, batch number, and expiry date are logged to dedicated bay coordinates for rapid retrieval.
+                  </p>
+                </div>
+              </li>
+              <li class="process-item">
+                <span class="process-num">03.</span>
+                <div>
+                  <h3 class="process-title">Value-Added Labeling &amp; Kitting</h3>
+                  <p class="process-desc">
+                    SON/NAFDAC compliance labeling, carton re-conditioning, and regional order assembly on request.
+                  </p>
+                </div>
+              </li>
+              <li class="process-item">
+                <span class="process-num">04.</span>
+                <div>
+                  <h3 class="process-title">Scheduled Release &amp; Cycle Counts</h3>
+                  <p class="process-desc">
+                    Written stock balance reports and dispatch manifests emailed to client supply chain teams.
+                  </p>
+                </div>
+              </li>
+            </ol>
+          </section>
+
+          <section class="content-block">
+            <h2 class="content-h2">Facility Specifications</h2>
+            <div class="table-wrap">
+              <table class="spec-table">
+                <thead>
+                  <tr>
+                    <th>Hub Corridor</th>
+                    <th>Storage Mode</th>
+                    <th>Clear Eave Height</th>
+                    <th>Security &amp; Handling</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Lagos Apapa Corridor</td>
+                    <td>Bonded &amp; Container Yard</td>
+                    <td class="tabular-nums">10.5 m</td>
+                    <td>24/7 CCTV, Reach Stackers, Dock Levelers</td>
+                  </tr>
+                  <tr>
+                    <td>Ikeja / Ogba Industrial Zone</td>
+                    <td>Ambient Racked &amp; Pick-Pack</td>
+                    <td class="tabular-nums">12.0 m</td>
+                    <td>Electric Reach Trucks, Fire Suppression</td>
+                  </tr>
+                  <tr>
+                    <td>Port Harcourt / Onne Corridor</td>
+                    <td>Oilfield Open Yard &amp; Covered Bay</td>
+                    <td class="tabular-nums">11.0 m</td>
+                    <td>Heavy Forklifts (10T&ndash;16T), Gated Access</td>
+                  </tr>
+                  <tr>
+                    <td>Abuja Distribution Hub</td>
+                    <td>Ambient Transit Cross-Dock</td>
+                    <td class="tabular-nums">9.0 m</td>
+                    <td>Palletized Staging, Daily Dispatch Bays</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="content-block">
+            <h2 class="content-h2">Related Trade Desks</h2>
+            <div class="related-grid">
+              <a href="road-transport.html" class="related-link">
+                <span class="related-link-title">Road Transport</span>
+                <span class="related-link-sub">Last-mile &amp; interstate haulage</span>
+              </a>
+              <a href="customs-clearance.html" class="related-link">
+                <span class="related-link-title">Customs Clearance</span>
+                <span class="related-link-sub">Bonded transfer &amp; release</span>
+              </a>
+              <a href="sea-freight.html" class="related-link">
+                <span class="related-link-title">Sea Freight</span>
+                <span class="related-link-sub">LCL deconsolidation arrivals</span>
+              </a>
+            </div>
+          </section>
+        </div>
+
+        <aside id="inquiry-form" class="sidebar-sticky" aria-label="Warehousing Inquiry Form">
+          <div class="inquiry-card">
+            <div class="inquiry-card-header">
+              <p class="inquiry-kicker">Fulfillment Desk</p>
+              <h2 class="inquiry-title">Request Warehousing Quote</h2>
+              <p class="inquiry-sub">
+                Submit your storage requirements below for direct handling by our fulfillment desk.
+              </p>
+            </div>
+            <div class="inquiry-card-body">
+              <form class="form-grid" data-formsubmit data-service-code="WH" novalidate>
+                <input type="hidden" name="_subject" value="New Warehousing Inquiry — Panworld Nigeria" />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="service" value="Warehousing &amp; Distribution" />
+                <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+
+                <div class="form-row-2">
+                  <div class="form-field">
+                    <label for="wh-hub" class="form-label">Facility Hub <span class="form-required">*</span></label>
+                    <select id="wh-hub" name="facility_hub" data-label="Facility Hub" class="form-control" required>
+                      <option value="">Select hub...</option>
+                      <option value="Lagos - Apapa Corridor">Lagos - Apapa Corridor</option>
+                      <option value="Lagos - Ikeja Industrial">Lagos - Ikeja Industrial</option>
+                      <option value="Port Harcourt / Onne">Port Harcourt / Onne</option>
+                      <option value="Abuja Distribution Hub">Abuja Distribution Hub</option>
+                    </select>
+                  </div>
+                  <div class="form-field">
+                    <label for="wh-type" class="form-label">Storage Type <span class="form-required">*</span></label>
+                    <select id="wh-type" name="storage_type" data-label="Storage Type" class="form-control" required>
+                      <option value="Bonded Warehouse">Bonded Warehouse</option>
+                      <option value="Ambient General Cargo">Ambient General Cargo</option>
+                      <option value="Temperature-Controlled">Temperature-Controlled</option>
+                      <option value="Open Yard / Heavy Equipment">Open Yard / Heavy Equipment</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-row-2">
+                  <div class="form-field">
+                    <label for="wh-space" class="form-label">Space (Sq.m or Pallets) <span class="form-required">*</span></label>
+                    <input
+                      id="wh-space"
+                      name="space_required"
+                      data-label="Space Required"
+                      type="text"
+                      class="form-control"
+                      placeholder="e.g. 500 sq.m or 120 pallets"
+                      required
+                    />
+                  </div>
+                  <div class="form-field">
+                    <label for="wh-duration" class="form-label">Duration <span class="form-required">*</span></label>
+                    <select id="wh-duration" name="duration" data-label="Duration" class="form-control" required>
+                      <option value="Short-Term (&lt; 3 Months)">Short-Term (&lt; 3 Months)</option>
+                      <option value="Medium-Term (3-12 Months)">Medium-Term (3&ndash;12 Months)</option>
+                      <option value="Long-Term Dedicated SLA">Long-Term Dedicated SLA</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-field">
+                  <label for="wh-vas" class="form-label">Handling &amp; Value-Added Scope <span class="form-required">*</span></label>
+                  <textarea
+                    id="wh-vas"
+                    name="handling_scope"
+                    data-label="Handling Scope"
+                    class="form-control"
+                    placeholder="e.g. Container destuffing, pick &amp; pack, barcode inventory audit, or cross-docking..."
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="form-row-2">
+                  <div class="form-field">
+                    <label for="wh-name" class="form-label">Full Name <span class="form-required">*</span></label>
+                    <input id="wh-name" name="full_name" data-label="Full Name" type="text" class="form-control" required />
+                  </div>
+                  <div class="form-field">
+                    <label for="wh-company" class="form-label">Company Name <span class="form-required">*</span></label>
+                    <input id="wh-company" name="company_name" data-label="Company" type="text" class="form-control" required />
+                  </div>
+                </div>
+
+                <div class="form-row-2">
+                  <div class="form-field">
+                    <label for="wh-phone" class="form-label">Contact Number <span class="form-required">*</span></label>
+                    <input
+                      id="wh-phone"
+                      name="contact_number"
+                      data-label="Contact Number"
+                      type="tel"
+                      class="form-control"
+                      placeholder="+234 800 000 0000"
+                      required
+                    />
+                  </div>
+                  <div class="form-field">
+                    <label for="wh-email" class="form-label">Email Address <span class="form-required">*</span></label>
+                    <input
+                      id="wh-email"
+                      name="email"
+                      data-label="Email Address"
+                      type="email"
+                      class="form-control"
+                      placeholder="name@company.com"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-error-msg" data-form-error role="alert"></div>
+
+                <button type="submit" class="btn btn-primary form-submit-btn">Send Warehousing Inquiry</button>
+                <p class="form-footnote">
+                  Written rate quotations and confirmation dockets are dispatched directly to your email address.
+                </p>
+              </form>
+
+              <div class="docket-panel" data-docket-panel aria-live="polite">
+                <div class="docket-status" data-docket-status>
+                  <p class="docket-status-title" data-docket-status-title></p>
+                  <p class="docket-status-desc" data-docket-status-desc></p>
+                </div>
+                <div class="docket-meta">
+                  <span>Docket: <strong class="docket-ref" data-docket-ref></strong></span>
+                  <span data-docket-time></span>
+                </div>
+                <div class="docket-list" data-docket-list></div>
+                <div class="docket-actions">
+                  <button type="button" class="btn btn-navy" data-reset-inquiry>Submit another inquiry</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-logo-badge">
+              <img
+                src="https://panworldnigeria.com/wp-content/uploads/elementor/thumbs/panworldngr-logo-q0qnswgfwsooqgn6zd3ggf50gly44lczrlu0pk92pg.png"
+                alt="Panworld Nigeria Limited"
+                class="brand-logo"
+                referrerpolicy="no-referrer"
+              />
+            </div>
+            <p class="footer-text">
+              Integrated freight forwarding, licensed customs brokerage, warehousing, and trade logistics across Nigeria's
+              sea, air, and inland corridors.
+            </p>
+            <a href="mailto:panworld99@yahoo.co.uk" class="footer-email">panworld99@yahoo.co.uk</a>
+          </div>
+          <div>
+            <h3 class="footer-heading">Freight &amp; Logistics</h3>
+            <ul class="footer-links">
+              <li><a href="sea-freight.html">Sea Freight</a></li>
+              <li><a href="air-freight.html">Air Freight</a></li>
+              <li><a href="road-transport.html">Road Transport</a></li>
+              <li><a href="warehousing.html">Warehousing &amp; Distribution</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer-heading">Services</h3>
+            <ul class="footer-links">
+              <li><a href="customs-clearance.html">Customs Clearance</a></li>
+              <li><a href="import-finance.html">Import Finance Advisory</a></li>
+              <li><a href="tracking.html">Tracking</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="footer-heading">Corporate</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="mailto:panworld99@yahoo.co.uk">Email Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2026 Panworld Nigeria. All rights reserved.</span>
+          <span>Official Correspondence: <a href="mailto:panworld99@yahoo.co.uk" style="color:inherit;text-decoration:underline;">panworld99@yahoo.co.uk</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
