@@ -29,6 +29,7 @@ export default defineConfig(() => {
             'styles.css',
             'script.js',
             'about.html',
+            'faq.html',
             'air-freight.html',
             'sea-freight.html',
             'road-transport.html',

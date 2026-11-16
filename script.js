@@ -319,6 +319,56 @@
     });
   }
 
+  // ------------------------------------------------------------------------
+  // 7. Interactive FAQ Collapsible Accordion
+  // ------------------------------------------------------------------------
+  function initFaqAccordions() {
+    const triggers = document.querySelectorAll("[data-faq-trigger]");
+    if (!triggers.length) return;
+
+    function setItemState(item, trigger, panel, expanded) {
+      trigger.setAttribute("aria-expanded", expanded ? "true" : "false");
+      item.classList.toggle("is-open", expanded);
+      if (expanded) {
+        panel.removeAttribute("hidden");
+      } else {
+        panel.setAttribute("hidden", "");
+      }
+    }
+
+    triggers.forEach(function (trigger) {
+      const item = trigger.closest(".faq-item");
+      const panelId = trigger.getAttribute("aria-controls");
+      const panel = panelId ? document.getElementById(panelId) : null;
+      if (!item || !panel) return;
+
+      trigger.addEventListener("click", function () {
+        const isExpanded = trigger.getAttribute("aria-expanded") === "true";
+        setItemState(item, trigger, panel, !isExpanded);
+      });
+    });
+
+    const toggleAllBtn = document.querySelector("[data-faq-toggle-all]");
+    if (toggleAllBtn) {
+      toggleAllBtn.addEventListener("click", function () {
+        const currentState = toggleAllBtn.getAttribute("data-state") === "expanded";
+        const expandAll = !currentState;
+
+        triggers.forEach(function (trigger) {
+          const item = trigger.closest(".faq-item");
+          const panelId = trigger.getAttribute("aria-controls");
+          const panel = panelId ? document.getElementById(panelId) : null;
+          if (item && panel) {
+            setItemState(item, trigger, panel, expandAll);
+          }
+        });
+
+        toggleAllBtn.setAttribute("data-state", expandAll ? "expanded" : "collapsed");
+        toggleAllBtn.textContent = expandAll ? "Collapse All Answers" : "Expand All Answers";
+      });
+    }
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     markActiveNavigation();
     initDesktopDropdown();
@@ -326,5 +376,6 @@
     initFormSubmitInquiries();
     initTrackingPrefill();
     initAnchorScroll();
+    initFaqAccordions();
   });
 })();
